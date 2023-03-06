@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY STYLING */
+body {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    /* display: grid; */
+}
+
+body .bg img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* TIP CALCULATOR - CONTAINER */
+#p-name {
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+#p-name img {
+    z-index: 3;
+    width: 50px !important;
+}
+
+.container {
+    border-radius: 10px;
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgba(194, 224, 228, 0.445) solid;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.534);
+
+}
+
+.container * {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+input,
+button {
+    font-size: larger;
+}
+
+input[type="reset"] {
+    background-color: rgba(128, 128, 128, 0.151);
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+input[type="reset"]:hover {
+    background-color: rgba(128, 128, 128, 0.616);
+
+}
+
+button {
+    background-color: rgb(39, 195, 216);
+
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(24, 228, 255);
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#output {
+    text-align: center;
+    font-size: x-large;
+    background-color: azure;
+    border: 2px dotted pink;
+}
+
+#tipAmount {
+    font-size: larger;
+    padding: 0;
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+}
