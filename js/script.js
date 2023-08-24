@@ -12,6 +12,4 @@ let tipCalculate = () => {
   document.getElementById("output").innerHTML = "Total Amount: " + output;
 };
 
-let resetInputs = () => {
-  billAmount = 0;
-};
+
